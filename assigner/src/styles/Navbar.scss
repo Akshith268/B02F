@@ -1,0 +1,153 @@
+.navbar {
+    .social {
+      height: 40px;
+      background: #641566;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  
+      .social-icon {
+        display: flex;
+        gap: 15px;
+        margin-right: 20px;
+  
+        a {
+          display: inline-flex;
+          align-items: center;
+  
+          img {
+            height: 25px;
+            width: auto;
+          }
+        }
+  
+        .linkedin {
+          height: 24.5px;
+          width: 25px;
+        }
+  
+        .facebook {
+          height: 15px;
+          width: 25px;
+        }
+  
+        .instagram, .twitter, .whatsapp, .telegram {
+          height: 24.5px;
+          width: 25px;
+        }
+      }
+    }
+  
+    .second {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 20px;
+  
+      .logo {
+        width: 249px;
+        height: 96px;
+        top: 44px;
+        left: 31px;
+        gap: 0px;
+        opacity: 0px;
+      }
+  
+      .menu {
+        width: 759px;
+        height: 47px;
+        gap: 63px;
+        background: #f5f5f5;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        ul {
+          display: flex;
+          gap: 20px;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+  
+          li a {
+            text-decoration: none;
+            font-family: Cormorant, serif;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19.38px;
+            color: #000; // Black color for the text
+            transition: color 0.3s;
+            margin-right: 35px;
+  
+            &:hover {
+              color: #641566; // Hover color
+            }
+          }
+        }
+      }
+  
+      .login {
+        button {
+          width: 139.6px;
+          height: 40.24px;
+          background: rgba(88, 55, 129, 1);
+          color: white;
+          border: none;
+          border-radius: 4.72px;
+          cursor: pointer;
+          font-family: Cormorant, serif;
+          font-size: 15px;
+          font-weight: 600;
+          line-height: 18.17px;
+          padding: 10px;
+          margin-right: 10px;
+          transition: background 0.3s;
+  
+          &:hover {
+            background: #520e4d; // Darker shade for hover effect
+          }
+  
+          span {
+            font-size: 15px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  
+    // Mobile responsive styles
+    @media (max-width: 768px) {
+      .social-icon {
+        gap: 10px;
+        a img {
+          height: 20px;
+          width: auto;
+        }
+        margin-right: 0px;
+      }
+  
+      .second {
+        display: flex;
+        flex-direction: row; // Stack logo and other items vertically
+        align-items: center;
+        margin-right: 0;
+  
+        .menu {
+          display: none; // Hide the menu on mobile
+        }
+  
+        .logo {
+          opacity: 1; // Make logo visible on mobile
+        }
+  
+        .login {
+          margin-top: 10px;
+          button {
+            width: 120px; // Adjust button size for mobile
+          }
+        }
+      }
+    }
+  }
+  
