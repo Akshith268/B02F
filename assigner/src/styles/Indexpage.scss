@@ -1,27 +1,252 @@
 .hero {
     img{
-    width: 100%; 
-    max-width: 1440px; 
-    height: auto; 
-    padding: 2px 0px 0px 0px;
-    gap: 0px;
-    border: 0.82px solid rgba(201, 201, 201, 1);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    opacity: 1;
-    transform: rotate(0deg);
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
+        height: 503px;
+        // width: 1440px;
+        top: 162px;
+        left: 303px;
+        margin-left: 220px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        margin-bottom: 10px;
     }
   }
+
+  .objects{
+    width: 50.16px;
+    height: 225.05px;
+    top: 650.62px;
+    left: -23.9px;
+    gap: 0px;
+    opacity: 0px;
+    position: absolute;
+  }
+  .stats{
+       margin-top: 10px;
+       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+       border: 1px solid rgba(0, 200, 200, 0);
+       width: 90%;
+       margin: auto;
+      //  border-radius: 10px;
+      .first-para{
+         width: 722px;
+         height: 31px;
+         font-family: Cormorant, serif;
+         font-size: 48px;
+         font-weight: 700;
+         align-items: center;
+         margin: auto;
+         line-height: 30.8px;
+          text-align: center;
+      }
+      .second-para{
+         width: 632px;
+         height: 40px;
+         font-family: Cormorant, serif;
+         font-size: 20px;
+         font-weight: 500;
+         align-items: center;
+         margin: auto;
+         line-height: 19.8px;
+         text-align: center;
+      }
+      .numbers{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          margin-top: 20px;
+          font-family: cormorant, serif;
+          .number{
+            h1{
+              font-size: 64px;
+              font-weight: 700;
+              margin:0;
+            }
+          }
+      }
+  }
+
+  .cross{
+    position: absolute;
+    right: 23px;
+    top: 802px;
+  }
+
+   .enroll{
+     margin-top: 10px;
+     height: 639px;
+     background: linear-gradient(257.29deg, rgba(153, 124, 152, 0.6) 6.5%, #FFFFFF 18.5%, rgba(159, 13, 118, 0.27) 41%, #FFFFFF 77.5%, rgba(153, 124, 152, 0.4) 90.5%);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 15px; 
+    margin-left: 20px;
+     .worldmap{
+       width: 690px;
+       height: 309px;
+       position: absolute;
+       left: 571px;
+       top: 965px;
+       z-index: 1;
+     }
+      .womvec{
+        .vector{
+          position: absolute;
+          width: 410px;
+          height: 370px;
+          left: 800px;
+          top: 1170px;
+          z-index: 0;
+        }
+        .women{
+          position: absolute;
+          width: 360px;
+          height: 350px;
+          left: 850px;
+          top: 1200px;
+          z-index: 1;
+        }
+      }
+      .enroll-text{
+        position: absolute;
+        width: 840px;
+        height: 265px;
+        left: 117px;
+        top: 1000px;
+        font-family: Cormorant, serif;
+        line-height: 77.5px;
+        font-size: 64px;
+        font-weight: 700;
+        .ielts{
+          color: rgba(159, 13, 118, 1);
+        }
+        .online{
+          color: rgba(76, 12, 92, 1);
+        }
+        .oppor{
+          color: rgba(162, 89, 255, 1);
+        }
+       
+      }
+      .info{
+        font-size: 32px;
+        height: 109px;
+        line-height: 38px;
+        font-weight: 500;
+        position: absolute;
+        width: 721px;
+        height: 265px;
+        left: 117px;
+        top: 1260px;
+        font-family: Cormorant, serif;
+      }
+
+      .enroll-btn{
+        position: absolute;
+        width: 384px;
+        height: 93.22px;
+        top: 1419.33px;
+        left: 177px;
+        gap: 0px;
+        border-radius: 15px;
+        opacity: 0px;
+        background: rgba(90, 21, 107, 1);
+        color: white;
+        font-family: Cormorant, serif;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 44.1px;
+        cursor: pointer;
+        border: none;
+        transition: background 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+      }
+      .enroll-btn:hover{
+        background: rgba(90, 21, 107, 0.8);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        opacity: 1;
+      }
+   }
+
+   .features{
+      margin-top: 20px;
+      .awesome{
+        font-family: Cormorant, serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48.8px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .tagline{
+        font-family: Cormorant, serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29.8px;
+        text-align: center;
+        margin: 0;
+      }
+      .list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 20px;
+        font-family: Cormorant, serif;
+        .feature{
+          padding: 10px;
+            border: 1px solid rgba(0, 0, 0, 1);
+            width: 270px;
+            height: 147px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 258px;
+            border-radius: 5px;
+            .feat-name{
+              font-size: 20px;
+              font-weight: 700;
+              margin: 0;
+              line-height: 24px;
+            }
+        }
+      }
+   }
   
 
  @media all and (max-width: 480px) {
     .hero {
       img {
         width: 100%;
+        height: auto;
+        margin-left: 0;
       }
     }
+
+    .objects {
+      display: none;
+    }
+    .stats{
+      .first-para{
+        width: 100%;
+        font-size: 36px;
+      }
+      .second-para{
+        width: 100%;
+        font-size: 18px;
+      }
+      .numbers{
+        .number{
+          h1{
+            font-size: 48px;
+          }
+        }
+      }
+    }
+    .cross{
+      display: none;
+    }
+   
+     
+     
+
     
   }
   
