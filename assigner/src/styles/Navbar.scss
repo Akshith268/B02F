@@ -76,12 +76,12 @@
             font-size: 16px;
             font-weight: 700;
             line-height: 19.38px;
-            color: #000; // Black color for the text
+            color: #000; 
             transition: color 0.3s;
             margin-right: 35px;
   
             &:hover {
-              color: #641566; // Hover color
+              color: #641566;
             }
           }
         }
@@ -105,7 +105,7 @@
           transition: background 0.3s;
   
           &:hover {
-            background: #520e4d; // Darker shade for hover effect
+            background: #520e4d;
           }
   
           span {
@@ -129,22 +129,22 @@
   
       .second {
         display: flex;
-        flex-direction: row; // Stack logo and other items vertically
+        flex-direction: row; 
         align-items: center;
         margin-right: 0;
   
         .menu {
-          display: none; // Hide the menu on mobile
+          display: none;
         }
   
         .logo {
-          opacity: 1; // Make logo visible on mobile
+          opacity: 1;
         }
   
         .login {
           margin-top: 10px;
           button {
-            width: 120px; // Adjust button size for mobile
+            width: 120px;
           }
         }
       }
