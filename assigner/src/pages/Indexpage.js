@@ -70,25 +70,28 @@ export default function IndexPage() {
        <div className='cross'>
           <img src='./cross.png' alt='cross' />
        </div>
-      <div className='enroll'>
-           <img src='./worldmap.png' alt='enroll' className='worldmap' />
-           {/* <span className='womvec'>
-            <img src='./vector.png' alt='enroll' className='vector' />
-           <img src='./women.png' alt='enroll' className='women' />
+       <div className="enroll">
+  <div className="left-content">
+    <div className="enroll-text">
+      <span className="ielts">IELTS Preparation</span><br /><br/>
+      <span className="online">Online Best Learning</span><br /><br/>
+      <span className="oppor">Opportunities in The World</span>
+    </div>
+    <div className="info">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Audax negotium, dicerem impudens, nisi hoc institut translatum ad philosophos nostros esset.</p>
+    </div>
+    <button className="enroll-btn">Enroll Now</button>
+  </div>
 
-           </span> */}
+  <div className="right-content">
+    <img src="./worldmap.png" alt="worldmap" className="worldmap" />
+    <div className="womvec">
+      <img src="./vector.png" alt="vector" className="vector" />
+      <img src="./women.png" alt="women" className="women" />
+    </div>
+  </div>
+</div>
 
-
-{/*           
-              <span className='enroll-text'>
-               <span className='ielts'>IELTS Preparation</span> <br/> <span className=' online'> Online Best Learning</span> <br/> <span className=' oppor'> opportunities in The World </span>
-              </span>
-               
-    
-            <span className='info'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Audax negotium, dicerem impudens, nisi hoc institut translatum ad philosophos nostros esset.</span>
-            <button className='enroll-btn'>Enroll Now</button> */}
-      </div>
 
       <div className='features'>
             <p className='awesome'>Awesome features</p>

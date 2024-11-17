@@ -86,6 +86,8 @@
           }
         }
       }
+
+
   
       .login {
         button {
@@ -114,10 +116,26 @@
           }
         }
       }
+      .hamburger-menu {
+        display: none; // Hidden by default for desktop
+        cursor: pointer;
+      
+        .bar {
+          width: 25px;
+          height: 3px;
+          background-color: #070707;
+          margin: 4px 0;
+          transition: 0.3s;
+        }
+      }
+      
+      .mobile-menu {
+        display: none; // Hidden by default
+      }
     }
   
     // Mobile responsive styles
-    @media (max-width: 768px) {
+    @media all and (max-width: 480px) {
       .social-icon {
         gap: 10px;
         a img {
@@ -148,7 +166,45 @@
         .login {
           margin-top: 10px;
           button {
-            width: 120px;
+            width: 100px;
+          }
+        }
+        .hamburger-menu {
+          display: block; // Show hamburger menu in mobile
+        }
+      
+        .mobile-menu {
+          display: block;
+          position: absolute;
+          top: 70px;
+          right: 0;
+          left: 50px;
+          background: black;
+          width: 100%;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      
+          ul {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding: 10px;
+            margin: 0;
+      
+            li {
+              margin: 10px 0;
+      
+              a {
+                text-decoration: none;
+                color: #000;
+                font-family: Cormorant, serif;
+                font-size: 16px;
+                font-weight: 700;
+      
+                &:hover {
+                  color: #641566;
+                }
+              }
+            }
           }
         }
       }

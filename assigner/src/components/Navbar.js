@@ -1,6 +1,9 @@
 import React from 'react'
 import '../styles/Navbar.scss'
+import { useState } from 'react'
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className='navbar'>
          <div className='social'>
@@ -48,6 +51,25 @@ export default function Navbar() {
              <div className='login'>
                 <button>Login</button>
              </div>
+
+             <div className="hamburger-menu" onClick={() => setMenuOpen(!menuOpen)}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
+         
+        {menuOpen && (
+        <div className="mobile-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">ILETS & PTE</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      )}
          </div>
 
          

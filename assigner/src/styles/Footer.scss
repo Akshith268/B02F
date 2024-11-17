@@ -10,17 +10,17 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      width: 50%;
+      width: 85%;
     //   margin: 0 auto; // Centers the container
     margin-left: 10%;
+
       color: black;
-  
+     
       .links,
       .features-footer,
       .offering {
         display: flex;
         flex-direction: column;
-  
         h2 {
           margin-bottom: 15px; // Adds spacing between heading and list
         }
@@ -39,6 +39,94 @@
               &:hover {
                 text-decoration: underline; // Adds underline on hover
               }
+            }
+          }
+        }
+      }
+
+      .newsletter{
+        // padding-left: 00px;
+        // margin-left: 100px;
+        margin-top: 200px;
+        font-family: Cormorant, serif;
+        .buttons{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 100%;
+          margin-top: 20px;
+          gap: 90px;
+          .email-btn{
+            font-size: 18px;
+            background: blueviolet;
+            color: white;
+            padding: 20px;
+            font-family: Cormorant, serif;
+            border: 1px solid black;
+            font-size: 500;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            &:hover{
+              background: rgb(165, 95, 230);
+              color: black;
+            }
+          }
+          .subscribe-btn{
+            font-size: 18px;
+            background: palevioletred;
+            color: white;
+        font-family: Cormorant, serif;
+            padding: 20px;
+            border: 1px solid black;
+            font-weight: 500;
+            border-radius: 5px;
+            cursor: pointer;
+           transition: background 0.3s;
+            &:hover{
+              background: rgb(220, 150, 204);
+              color: black;
+            }
+          }
+        }
+        .social {
+          width: 80%;
+          height: 40px;
+          background: black;
+          display: flex;
+          // justify-content: flex-end;
+          justify-content: space-evenly ;
+          align-items: center;
+          margin-left: 50px;
+        color: white;
+          .social-icon {
+            display: flex;
+            gap: 15px;
+            // margin-right: 50px;
+      
+            a {
+              display: inline-flex;
+              align-items: center;
+      
+              img {
+                height: 25px;
+                width: auto;
+              }
+            }
+      
+            .linkedin {
+              height: 24.5px;
+              width: 25px;
+            }
+      
+            .facebook {
+              height: 15px;
+              width: 25px;
+            }
+      
+            .instagram, .twitter, .whatsapp, .telegram {
+              height: 24.5px;
+              width: 25px;
             }
           }
         }
